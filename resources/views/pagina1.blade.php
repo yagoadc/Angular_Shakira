@@ -7,6 +7,6 @@
     <link rel="stylesheet" type="" href="">
   </head>
   <body>
-      <h1>pagina1</h1>      
+      <h1>O cadastro {{$id}} foi apagado!</h1>      
   </body>
 </html>

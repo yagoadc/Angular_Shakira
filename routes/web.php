@@ -21,9 +21,17 @@
 
  ]);}); */
 
-Route::post('/', 'ExemploController@now' )->name('nomeDaRota');
+Auth::routes();
 
-Route::get('/','ExemploController@now')->name('nomeDaRota');
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/', 'UsuarioController@store' )->name('nomeDaRota');
+
+Route::get('apagar/{id}', 'UsuarioController@destroy');
+
+Route::get('mostrar', 'UsuarioController@');
+
+//Route::get('/','ExemploController@now');
 
 
 Route::get('/pagina1', function () {
